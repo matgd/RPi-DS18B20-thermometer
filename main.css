@@ -1,0 +1,18 @@
+#temp {
+    text-align: center;
+    color: rgb(241, 241, 241);
+    font-size: 400%;
+    font-family: sans-serif;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body {
+    background-color: rgb(43, 42, 42);
+}
