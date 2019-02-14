@@ -6,7 +6,8 @@
     <title>Termometr</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js" defer></script>
+	<link rel="stylesheet" href="animate.min.css">
+    <!-- <script src="main.js" defer></script> -->
 </head>
 <body>
     <div id="temp" class="center">
@@ -19,7 +20,7 @@
             $temp = strchr($data, "t=");
             $temp = preg_replace("/t=/", "", $temp);
         
-            echo sprintf("%.3f".$degree, $temp/1000);
+            echo sprintf('%.1f'.$degree, $temp/1000);
 
             fclose($file);
 
